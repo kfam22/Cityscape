@@ -4,13 +4,15 @@
 
 html{
   box-sizing: border-box;
+  background-color: #111111;
+  color: white;
 }
 
 /* HEADER STYLES */
 header{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* margin: 10% 0 0 3%; */
   position: fixed;
 }
@@ -20,14 +22,15 @@ header{
 } */
 
 .headerContainer{
+  height: 100vh;
   margin-left: 2rem;
-  padding: 13rem 0 35rem 0;
+  padding: 0 0 35rem 0;
   width: 16em;
-  background-color: #11111185;
+  background-color: #1111114f;
 }
 
 .logo {
-  /* margin-top: 2rem; */
+  margin-top: 5rem;
   margin-left: 1.5rem;
   text-decoration: none;
   font-size: 2rem;
@@ -76,7 +79,7 @@ header{
 .item img{
   object-fit: cover;
   height: 100vh;
-  /* min-width: 30rem; */
+  min-width: 50rem;
   /* margin-right: .6rem;  */
 }
 
@@ -102,4 +105,38 @@ header{
   /* background-color: lightgrey; */
   margin-right: 0; 
   object-fit: cover;
+}
+
+/* CONTACT STYLES */
+.contactContainer{
+  width: 60%;
+  margin-left: 30rem;
+  margin-top: 2rem;
+}
+
+.headerImageContainer img{
+  height: 22rem;
+  min-width: 1000px;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+
+.aboutText{
+  display:flex;
+}
+
+.aboutText div{
+  margin-right: 1.2rem;
+}
+
+.aboutText h1{
+  font-size: 1.6rem;
+}
+
+.bio {
+  width: 65%;
+}
+
+.featured p{
+  font-size: .7rem;
 }

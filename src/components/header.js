@@ -1,19 +1,20 @@
-
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
     return (
       <div>
         <header className="headerContainer">
-            <a className='logo' href='#'>Kayla Famurewa</a>
+            <Link className='logo' to='/'>Jon<br/> Famurewa</Link>
             <div className='nav'>
-            <a href='#'>work</a>
-            <a href='#'>about</a>
-            <a href='#'>services</a>
-            <a href='#'>contact</a>
+            <Link to='/'>landscape</Link>
+            <Link to='/'>portraits</Link>
+            <Link to='/'>sports</Link>
+            <Link to='/contact'>contact</Link>
             </div>
           </header>
         </div>
     )
   
   }
+

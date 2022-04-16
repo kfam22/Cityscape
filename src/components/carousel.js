@@ -1,12 +1,10 @@
-import images from '../images'
+import images from '../imageCollections/images'
 
 export default function carousel() {
   return (
     <div className="wrapper">
         {images.map(image => {
-            //   console.log("current image", image)
             if(typeof image === 'object'){
-                // console.log("we're inside the if statement", image, "image.title", image.collection1.title)
                 return(
                 <div className='item imageInfo'>
                     <div>
